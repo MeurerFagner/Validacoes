@@ -1,0 +1,72 @@
+﻿<dx:DXWindow xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"  xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" 
+    x:Class="WindowValidacao.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:WindowValidacao"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    Title="DXApplication" 
+    SnapsToDevicePixels="True" UseLayoutRounding="True" SizeToContent="WidthAndHeight"
+    >
+    <dx:DXWindow.Resources>
+        <Style TargetType="dx:DXTabItem">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BackgroundColor" Value="#eee"/>
+        </Style>
+        <Style TargetType="dxlc:LayoutGroup">
+            <Setter Property="Orientation" Value="Vertical"/>
+        </Style>
+        <Style TargetType="dxe:TextEdit">
+            <Setter Property="Width" Value="100"/>
+        </Style>
+
+    </dx:DXWindow.Resources>
+
+    <dxlc:LayoutControl Orientation="Vertical">
+        <dx:DXTabControl>
+            <dx:DXTabItem Header="Tab 1">
+                <dxlc:LayoutControl>
+                    <dxlc:LayoutGroup View="GroupBox" Header="Grupo 1">
+                        <dxlc:LayoutItem Label="Campo 01">
+                            <dxe:TextEdit/>
+                        </dxlc:LayoutItem>
+                        <dxlc:LayoutItem Label="Campo 01">
+                            <dxe:TextEdit/>
+                        </dxlc:LayoutItem>
+                    </dxlc:LayoutGroup>
+                    <dxlc:LayoutGroup View="GroupBox" Header="Grupo 1">
+                        <dxlc:LayoutItem Label="Campo 01">
+                            <dxe:TextEdit/>
+                        </dxlc:LayoutItem>
+                        <dxlc:LayoutItem Label="Campo 01">
+                            <dxe:TextEdit/>
+                        </dxlc:LayoutItem>
+                    </dxlc:LayoutGroup>
+                </dxlc:LayoutControl>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="Tab 1">
+                <dxlc:LayoutControl>
+                    <dxlc:LayoutGroup View="GroupBox" Header="Grupo 1">
+                        <dxlc:LayoutItem Label="Campo 01">
+                            <dxe:TextEdit/>
+                        </dxlc:LayoutItem>
+                        <dxlc:LayoutItem Label="Campo 01">
+                            <dxe:TextEdit/>
+                        </dxlc:LayoutItem>
+                    </dxlc:LayoutGroup>
+                    <dxlc:LayoutGroup View="GroupBox" Header="Grupo 1">
+                        <dxlc:LayoutItem Label="Campo 01">
+                            <dxe:TextEdit/>
+                        </dxlc:LayoutItem>
+                        <dxlc:LayoutItem Label="Campo 01">
+                            <dxe:TextEdit/>
+                        </dxlc:LayoutItem>
+                    </dxlc:LayoutGroup>
+                    
+                </dxlc:LayoutControl>
+
+            </dx:DXTabItem>
+        </dx:DXTabControl>
+        <local:UserControl1 Margin="0" Padding="0"/>
+        <Button Height="25" Width="70" Click="Button_Click">Teta Validação</Button>
+    </dxlc:LayoutControl>
+</dx:DXWindow>
